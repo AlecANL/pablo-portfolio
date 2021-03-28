@@ -1,0 +1,29 @@
+@use '../utils/fonts' as f;
+@use '../utils/colors' as c;
+
+body {
+  margin: 0;
+  font-family: f.$interFont;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  margin-block: 0;
+}
+
+p {
+  color: var(--just-gray);
+  font-size: 18px;
+  line-height: 27px;
+  margin-block-start: 16px;
+  margin-block-end: 16px;
+}
+.wrapper {
+  max-inline-size: 1400px;
+  margin: auto;
+}
