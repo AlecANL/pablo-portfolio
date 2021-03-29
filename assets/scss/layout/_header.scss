@@ -1,0 +1,22 @@
+@forward '../components/nav';
+@use '../utils/mixins' as m;
+@use '../utils/colors' as c;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--just-white);
+  z-index: 1000;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 22px;
+  padding-block: 20px;
+  @include m.from(m) {
+    padding-block: 35px;
+  }
+}
