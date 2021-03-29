@@ -16,7 +16,13 @@
   align-items: center;
   margin-inline: 22px;
   padding-block: 20px;
+  @include m.from(sm) {
+    padding-inline: 50px;
+  }
   @include m.from(m) {
     padding-block: 35px;
+  }
+  @include m.from(l) {
+    padding-inline: 0;
   }
 }

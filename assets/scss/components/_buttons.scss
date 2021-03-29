@@ -1,0 +1,18 @@
+@use '../utils/colors';
+
+.btn {
+  inline-size: 100%;
+  padding-inline: 40px;
+  padding-block: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  background-color: #000;
+  &:active {
+    transform: scale(0.98);
+  }
+}
+.btn--soft-blue {
+  background-color: var(--ligth-blue);
+  color: var(--just-white);
+}

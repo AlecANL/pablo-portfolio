@@ -10,6 +10,7 @@
 
 body {
   margin: 0;
+  margin-block-start: 110px;
   font-family: "Inter", sans-serif;
 }
 
@@ -204,10 +205,110 @@ p {
   margin-inline: 22px;
   padding-block: 20px;
 }
+@media screen and (min-width: 480px) {
+  .header-content {
+    padding-inline: 50px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header-content {
     padding-block: 35px;
   }
+}
+@media screen and (min-width: 1024px) {
+  .header-content {
+    padding-inline: 0;
+  }
+}
+
+.hero-content {
+  margin-inline: 22px;
+  margin-block-end: 32px;
+}
+.hero-content__main-title {
+  margin-block-start: 16px;
+  margin-block-end: 8px;
+  font-size: 32px;
+  line-height: 32px;
+}
+.hero-content__subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--just-gray);
+}
+.hero-content__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+@media screen and (min-width: 480px) {
+  .hero-content {
+    padding-inline: 50px;
+  }
+  .hero-content__description {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .hero-content button.btn {
+    inline-size: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-content {
+    padding-block: 50px;
+  }
+  .hero-content__main-title {
+    font-size: 50px;
+    margin-block: 16px;
+  }
+  .hero-content button.btn {
+    inline-size: 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero-content {
+    padding-block: 60px;
+    padding-inline: 145px;
+  }
+  .hero-content__main-title {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .hero-content__subtitle {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  .hero-content__description {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .hero-content button.btn {
+    inline-size: 260px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .hero-content {
+    padding-inline: 345px;
+  }
+}
+
+.btn {
+  inline-size: 100%;
+  padding-inline: 40px;
+  padding-block: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  background-color: #000;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn--soft-blue {
+  background-color: var(--ligth-blue);
+  color: var(--just-white);
 }
 
 /*# sourceMappingURL=styles.css.map */
