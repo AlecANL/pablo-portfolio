@@ -1,1 +1,21 @@
 @forward '../components/card_project';
+@use '../utils/colors' as c;
+@use '../utils/mixins' as m;
+
+.projects {
+  background-color: #d8eefe;
+}
+
+.projects-content {
+  margin-inline: 22px;
+  padding-block: 110px;
+  @include m.from(sm) {
+    padding-inline: 50px;
+  }
+  @include m.from(m) {
+    padding-inline: 150px;
+  }
+  @include m.from(l) {
+    padding-inline: 0;
+  }
+}

@@ -8,6 +8,10 @@
   --soft-blue: #2b79bd;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   margin-block-start: 110px;
@@ -40,6 +44,10 @@ p {
   line-height: 27px;
   margin-block-start: 16px;
   margin-block-end: 16px;
+}
+
+img {
+  max-inline-size: 100%;
 }
 
 .wrapper {
@@ -290,6 +298,82 @@ p {
 @media screen and (min-width: 1366px) {
   .hero-content {
     padding-inline: 345px;
+    padding-block: 100px;
+  }
+}
+
+.project {
+  margin-block: 80px;
+}
+.project__description {
+  margin-block-start: 32px;
+}
+.project__description .heading {
+  font-size: 32px;
+  line-height: 32px;
+  color: var(--dark-blue);
+}
+.project .buttons button {
+  margin-block-end: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    column-gap: 111px;
+    padding-inline: 30px;
+  }
+  .project__image {
+    inline-size: 70%;
+  }
+  .project__description {
+    align-self: center;
+  }
+  .project__description .buttons {
+    gap: 16px;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .project__image {
+    inline-size: 100%;
+  }
+  .project__description {
+    padding-inline: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .project.r-side .project__image {
+    grid-column: 2/3;
+  }
+  .project.r-side .project__description {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.projects {
+  background-color: #d8eefe;
+}
+
+.projects-content {
+  margin-inline: 22px;
+  padding-block: 110px;
+}
+@media screen and (min-width: 480px) {
+  .projects-content {
+    padding-inline: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects-content {
+    padding-inline: 150px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .projects-content {
+    padding-inline: 0;
   }
 }
 
@@ -309,6 +393,12 @@ p {
 .btn--soft-blue {
   background-color: var(--ligth-blue);
   color: var(--just-white);
+}
+
+.btn--transparent {
+  border: 2px solid var(--dark-blue);
+  background-color: transparent;
+  color: var(--dark-blue);
 }
 
 /*# sourceMappingURL=styles.css.map */

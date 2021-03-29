@@ -1,6 +1,9 @@
 @use '../utils/fonts' as f;
 @use '../utils/colors' as c;
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   margin-block-start: 110px;
@@ -31,6 +34,9 @@ p {
   line-height: 27px;
   margin-block-start: 16px;
   margin-block-end: 16px;
+}
+img {
+  max-inline-size: 100%;
 }
 .wrapper {
   max-inline-size: 1400px;

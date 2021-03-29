@@ -64,5 +64,6 @@
   }
   @include m.from(x) {
     padding-inline: 345px;
+    padding-block: 100px;
   }
 }

@@ -16,3 +16,8 @@
   background-color: var(--ligth-blue);
   color: var(--just-white);
 }
+.btn--transparent {
+  border: 2px solid var(--dark-blue);
+  background-color: transparent;
+  color: var(--dark-blue);
+}

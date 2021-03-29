@@ -1,0 +1,53 @@
+@use '../utils/colors' as c;
+@use '../utils/mixins' as m;
+
+.project {
+  margin-block: 80px;
+  &__description {
+    // background-color: red;
+    margin-block-start: 32px;
+  }
+  &__description .heading {
+    font-size: 32px;
+    line-height: 32px;
+    color: var(--dark-blue);
+  }
+  .buttons button {
+    margin-block-end: 16px;
+  }
+  @include m.from(l) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    column-gap: 111px;
+    padding-inline: 30px;
+    &__image {
+      inline-size: 70%;
+    }
+    &__description {
+      align-self: center;
+      //   padding-inline: 20px;
+    }
+    &__description .buttons {
+      gap: 16px;
+      display: flex;
+    }
+  }
+  @include m.from(x) {
+    &__image {
+      inline-size: 100%;
+    }
+    &__description {
+      padding-inline: 50px;
+    }
+  }
+  @include m.from(l) {
+    &.r-side .project__image {
+      grid-column: 2 /3;
+    }
+    &.r-side .project__description {
+      grid-column: 1 /2;
+      grid-row: 1 /2;
+    }
+  }
+}
