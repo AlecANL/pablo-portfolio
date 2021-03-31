@@ -21,8 +21,12 @@
     font-weight: 400;
     line-height: 24px;
   }
+  @include m.from(s) {
+    padding-block: 40px;
+  }
   @include m.from(sm) {
     padding-inline: 50px;
+    padding-block: 0;
     &__description {
       font-size: 16px;
       line-height: 26px;
