@@ -1,0 +1,44 @@
+@use '../utils/colors' as c;
+@use '../utils/mixins' as m;
+
+.footer {
+  background-color: var(--dark-blue);
+  color: var(--darkness-gray);
+}
+
+.footer-content {
+  margin-inline: 22px;
+  padding-block: 48px;
+  @include m.from(sm) {
+    padding-inline: 50px;
+  }
+  @include m.from(m) {
+    padding-inline: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @include m.from(l) {
+    padding-inline: 0;
+  }
+}
+
+.feed-social {
+  margin-block-start: 40px;
+  a {
+    color: var(--darkness-gray);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  li {
+    margin-block-end: 24px;
+  }
+  @include m.from(m) {
+    margin-block-start: 0;
+    display: flex;
+    gap: 40px;
+    li {
+      margin-block-end: 0;
+    }
+  }
+}

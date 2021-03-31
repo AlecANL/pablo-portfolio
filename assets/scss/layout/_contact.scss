@@ -1,0 +1,37 @@
+@use '../utils/colors' as c;
+@use '../utils/mixins' as m;
+
+.contact {
+  background-color: var(--dark-blue);
+}
+.contact-content {
+  margin-inline: 22px;
+  padding-block: 64px;
+  h2 {
+    color: var(--just-white);
+    font-size: 32px;
+    line-height: 32px;
+  }
+  h4 {
+    margin-block-start: 32px;
+    color: var(--just-pink);
+    font-size: 24px;
+    line-height: 26px;
+  }
+  @include m.from(sm) {
+    padding-inline: 50px;
+  }
+  @include m.from(m) {
+    padding-inline: 90px;
+    h2 {
+      font-size: 64px;
+      line-height: 76px;
+    }
+  }
+  @include m.from(l) {
+    padding-inline: 200px;
+  }
+  @include m.from(x) {
+    padding-inline: 345px;
+  }
+}

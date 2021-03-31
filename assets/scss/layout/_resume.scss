@@ -1,0 +1,59 @@
+@use '../utils/colors' as c;
+@use '../utils/mixins' as m;
+
+.experience {
+  background-color: var(--dark-blue);
+  color: var(--just-white);
+  p {
+    color: var(--just-white);
+  }
+}
+.experience-content {
+  margin-inline: 22px;
+  padding-block: 80px;
+  h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  &__description {
+    margin-block: 16px;
+  }
+  @include m.from(sm) {
+    padding-inline: 50px;
+    h2 {
+      font-size: 72px;
+      line-height: 80px;
+    }
+    &__description {
+      font-size: 24px;
+      line-height: 38px;
+    }
+  }
+  @include m.from(m) {
+    padding-inline: 90px;
+  }
+  @include m.from(l) {
+    padding-inline: 200px;
+  }
+  @include m.from(x) {
+    padding-inline: 345px;
+  }
+}
+.experience-card {
+  margin-block: 16px;
+  h3 {
+    padding-block-start: 26px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  &__tag {
+    font-weight: 700;
+  }
+  &__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @include m.from(m) {
+    font-size: 18px;
+  }
+}

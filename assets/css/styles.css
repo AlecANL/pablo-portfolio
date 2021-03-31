@@ -312,6 +312,7 @@ img {
   font-size: 32px;
   line-height: 32px;
   color: var(--dark-blue);
+  text-transform: capitalize;
 }
 .project .buttons button {
   margin-block-end: 16px;
@@ -377,6 +378,169 @@ img {
   }
 }
 
+.experience {
+  background-color: var(--dark-blue);
+  color: var(--just-white);
+}
+.experience p {
+  color: var(--just-white);
+}
+
+.experience-content {
+  margin-inline: 22px;
+  padding-block: 80px;
+}
+.experience-content h2 {
+  font-size: 32px;
+  line-height: 32px;
+}
+.experience-content__description {
+  margin-block: 16px;
+}
+@media screen and (min-width: 480px) {
+  .experience-content {
+    padding-inline: 50px;
+  }
+  .experience-content h2 {
+    font-size: 72px;
+    line-height: 80px;
+  }
+  .experience-content__description {
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .experience-content {
+    padding-inline: 90px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .experience-content {
+    padding-inline: 200px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .experience-content {
+    padding-inline: 345px;
+  }
+}
+
+.experience-card {
+  margin-block: 16px;
+}
+.experience-card h3 {
+  padding-block-start: 26px;
+  font-size: 32px;
+  line-height: 32px;
+}
+.experience-card__tag {
+  font-weight: 700;
+}
+.experience-card__description {
+  font-size: 16px;
+  line-height: 24px;
+}
+@media screen and (min-width: 768px) {
+  .experience-card {
+    font-size: 18px;
+  }
+}
+
+.contact {
+  background-color: var(--dark-blue);
+}
+
+.contact-content {
+  margin-inline: 22px;
+  padding-block: 64px;
+}
+.contact-content h2 {
+  color: var(--just-white);
+  font-size: 32px;
+  line-height: 32px;
+}
+.contact-content h4 {
+  margin-block-start: 32px;
+  color: var(--just-pink);
+  font-size: 24px;
+  line-height: 26px;
+}
+@media screen and (min-width: 480px) {
+  .contact-content {
+    padding-inline: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-content {
+    padding-inline: 90px;
+  }
+  .contact-content h2 {
+    font-size: 64px;
+    line-height: 76px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact-content {
+    padding-inline: 200px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .contact-content {
+    padding-inline: 345px;
+  }
+}
+
+.footer {
+  background-color: var(--dark-blue);
+  color: var(--darkness-gray);
+}
+
+.footer-content {
+  margin-inline: 22px;
+  padding-block: 48px;
+}
+@media screen and (min-width: 480px) {
+  .footer-content {
+    padding-inline: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-content {
+    padding-inline: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer-content {
+    padding-inline: 0;
+  }
+}
+
+.feed-social {
+  margin-block-start: 40px;
+}
+.feed-social a {
+  color: var(--darkness-gray);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.feed-social li {
+  margin-block-end: 24px;
+}
+@media screen and (min-width: 768px) {
+  .feed-social {
+    margin-block-start: 0;
+    display: flex;
+    gap: 40px;
+  }
+  .feed-social li {
+    margin-block-end: 0;
+  }
+}
+
 .btn {
   inline-size: 100%;
   padding-inline: 40px;
@@ -386,12 +550,18 @@ img {
   border-radius: 4px;
   background-color: #000;
 }
+.btn a {
+  color: var(--dark-blue);
+}
 .btn:active {
   transform: scale(0.98);
 }
 
 .btn--soft-blue {
   background-color: var(--ligth-blue);
+  color: var(--just-white);
+}
+.btn--soft-blue a {
   color: var(--just-white);
 }
 

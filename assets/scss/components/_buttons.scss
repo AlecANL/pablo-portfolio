@@ -8,6 +8,9 @@
   border: none;
   border-radius: 4px;
   background-color: #000;
+  a {
+    color: var(--dark-blue);
+  }
   &:active {
     transform: scale(0.98);
   }
@@ -15,6 +18,9 @@
 .btn--soft-blue {
   background-color: var(--ligth-blue);
   color: var(--just-white);
+  a {
+    color: var(--just-white);
+  }
 }
 .btn--transparent {
   border: 2px solid var(--dark-blue);
